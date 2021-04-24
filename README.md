@@ -45,9 +45,13 @@ You can use `dnsmasq` or other solutions to have a *.home.test to be resolved dy
 docker-compose up --build
 ```
 
+## Accessing the project
+
+Just follow the link: https://rr-problem.home.test
+
 ## Problem description
 
-All requests to the debug panel (and in general any absolute link generated) will point to the `http` scheme instead of `https`.
+Although, the page itself loads without issues, all requests to the debug panel (and in general any _absolute_ link generated) will point to the `http` scheme instead of `https`.
 
 In Firefox you'll see this in the console:
 
