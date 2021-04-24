@@ -33,7 +33,7 @@ Now you have your local HTTPS certificate.
 
 ## Domain resolution
 
-You can use `dnsmasq` or other solutions to have a *.home.test to be resolved dynamically, but in this demo we'll just put the following record to `/etc/hosts/`:
+You can use `dnsmasq` or other solutions to have a *.home.test to be resolved dynamically, but in this demo we'll just put the following record to `/etc/hosts`:
 
 ```
 127.0.0.1 rr-problem.home.test
