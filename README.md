@@ -26,7 +26,7 @@ platform.
     Where `home.test` is the domain, where you will place your sites.
 
 * To make your system and browsers trust the newly generated certificates you
-should run the following:
+should run the following (you can skip this step, but then the connection will not be trusted):
 
     ```bash
     mkcert -install
