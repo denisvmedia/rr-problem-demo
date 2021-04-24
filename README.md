@@ -2,6 +2,8 @@
 
 This project demonstrates a problem when RR cannot detect https connection that was made to the reverse proxy behind which RR runs.
 
+See [this](https://github.com/spiral/roadrunner/issues/644) and [this](https://github.com/Baldinof/roadrunner-bundle/issues/39).
+
 *NOTE* make sure you have ports 80 and 443 available in your system before running this project, otherwise `nginx-proxy` will fail to bind.
 
 ## Local HTTPS certificates
