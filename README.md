@@ -1,5 +1,9 @@
 # RR vs. Symfony on HTTPS problem demo
 
+This project demonstrates a problem when RR cannot detect https connection that was made to the reverse proxy behind which RR runs.
+
+*NOTE* make sure you have ports 80 and 443 available in your system before running this project, otherwise `nginx-proxy` will fail to bind.
+
 ## Local HTTPS certificates
 
 In order to be able of use https locally, we need to install an HTTPS certificate
