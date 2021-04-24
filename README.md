@@ -65,3 +65,7 @@ If I hack `HttpFoundationWorker::configureServer()` (in vendor/baldinof/roadrunn
 ```
 
 *NOTE*: Don't forget to run `docker-compose restart` to have the change in effect.
+
+[nginx-proxy-docs]: https://github.com/nginx-proxy/nginx-proxy#usage
+[mkcert]: https://github.com/FiloSottile/mkcert
+[mkcert-docs]: https://github.com/FiloSottile/mkcert#installation
