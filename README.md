@@ -2,10 +2,9 @@
 
 ## Local HTTPS certificates
 
-Many functionalities of Jobtome are https only (e.g. push notifications).
-In order to be able of use those, we need to install an HTTPS certificate
+In order to be able of use https locally, we need to install an HTTPS certificate
 locally. [mkcert][mkcert] is a simple zero-config tool to make locally trusted
-development certificates with any names you’d like.
+development certificates with any names youâ€™d like.
 
 * Use the [official documentation][mkcert-docs] to install `mkcert` on your
 platform.
@@ -52,7 +51,7 @@ All requests to the debug panel (and in general any absolute link generated) wil
 
 In Firefox you'll see this in the console:
 
-> Blocked loading mixed active content “http://rr-problem.home.test/_wdt/1fdd8c”
+> Blocked loading mixed active content â€œhttp://rr-problem.home.test/_wdt/1fdd8câ€
 
 In Chrome you'll see this in the console:
 
