@@ -70,6 +70,8 @@ If I hack `HttpFoundationWorker::configureServer()` (in vendor/baldinof/roadrunn
 
 *NOTE*: Don't forget to run `docker-compose restart` to have the change in effect.
 
+The problem exists because in the url that we got from RR we have this: `http://rr-problem.home.test` instead of this: `https://rr-problem.home.test` (i.e. http and not https)
+
 [nginx-proxy-docs]: https://github.com/nginx-proxy/nginx-proxy#usage
 [mkcert]: https://github.com/FiloSottile/mkcert
 [mkcert-docs]: https://github.com/FiloSottile/mkcert#installation
