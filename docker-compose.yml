@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy:alpine
+    container_name: "nginx-proxy-local"
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs
+    networks:
+      - backend
+
+  apprr: &apprr
+    build:
+      context: .
+      target: base-rr
+    volumes:
+      - .:/var/www/html:cached
+      - ./vendor:/var/www/html/vendor:delegated
+    ports:
+      - "8080"
+    command: >
+      sh -c "composer update && rr serve"
+    environment:
+      - APP_ENV=dev
+      - APP_SECRET=d58e3582afa99040e27b92b13c8f2280
+      - VIRTUAL_HOST=rr-problem.home.test
+      - VIRTUAL_PORT=8080
+    networks:
+      - backend
+
+networks:
+  backend:
